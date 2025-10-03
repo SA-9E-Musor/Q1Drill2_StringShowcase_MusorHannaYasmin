@@ -6,10 +6,9 @@ def show_message(event):
     age = document.querySelector("#age").value
     school = document.querySelector("#school").value
 
-    # Clear the output div first
     document.querySelector("#output").innerText = ""
 
-    # Multiline message using input values
+ 
     message = f"""👤 Student Profile
     Name   : {name}
     Age    : {age}
@@ -20,5 +19,6 @@ def show_message(event):
     This information was gathered through input fields and displayed using
     a multiline string in Python via PyScript.
     """
+
 
     display(message, target="output")
